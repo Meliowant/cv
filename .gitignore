@@ -1,0 +1,13 @@
+*.aux
+*.bak
+*.bbl
+*.blg
+*.log
+*.out
+*.vim
+*.html
+*.list
+examples/
+CHANGELOG
+KNOWN_BUGS
+README

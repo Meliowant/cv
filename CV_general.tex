@@ -1,0 +1,127 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}%{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Andrii}
+\familyname{Borovyi}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{5 Kryva Lypa Str., Apt.~5}{79000 Lviv, Ukraine}    % optional, remove the line if not wanted
+\mobile{0038-097-441-8117}                    % optional, remove the line if not wanted
+\phone{0099-559-910-3174}
+%\phone{0038-0352-43-6038}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{andrii.borovyi@gmail.com}                      % optional, remove the line if not wanted
+\extrainfo{ICQ: 264504348\\Skype: aborovyi}
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{My_Photo}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+\renewcommand{\refname}{Main publications}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%\section{Objective}
+\cvline{Title:}{Researcher/Tester at Darwin's Grove}
+
+\section{Education}
+\cventry{2006--2012}{Ph.D. in Computer Engineering}{Ternopil National Economic University, (TNEU)}{Ternopil, Ukraine}{}{}
+\cventry{2005--2006}{Master}{Ternopil State Ivan Pul'uj Technical University, (TSTU)}{Ternopil, Ukraine}{}{}
+\cventry{2004--2005}{Specialist}{TSTU}{Ternopil}{}{}  % arguments 3 to 6 are optional
+\cventry{2000--2004}{Bachelor}{TSTU}{Ternopil}{}{}  % arguments 3 to 6 are optional
+
+\section{Work experience}
+\cventry{2014--present}{Tester}{Darwin's Grove company, Ukrainian team}{Lviv, Ukraine}{}{}
+\cvlistitem {Manual testing for desktop and Web-based software;}
+\cvlistitem {Automate testing for Web-based software;}
+\cvlistitem {Proposed usage of and introduced bug-tracking system, that simplified software-development process.}
+\cventry{2013--2014}{Researcher}{Darwin's Grove company, Ukrainian team}{Lviv, Ukraine}{}{}
+\cvlistitem {Research on Hierarchical Temporal Memory (HTM) for developing anchoring bias with artificial intelligence;}
+\cvlistitem {Developed server part (foreground) for simplifying HTM modeling.}
+\cventry{2008--2013}{Lecturer}{Department of Information Computing Systems and Control, TNEU}{Ternopil, Ukraine}{}{}
+%{\begin{itemize}
+\cvlistitem {Developed Java-based course on ``Cross-platform development'' in English;}
+\cvlistitem {Taught courses: ``Object-oriented programming'', ``Computer Networks'' and ``Introduction to Computer Science'' in English and Ukrainian;}
+\cvlistitem {Published as a co-author a book ``Computer Networks'' in Ukrainian.}
+%\end{itemize}}{}% arguments 3 to 6 are optional
+\cventry{2006--2008}{Training lecturer}{Department of Information Computing Systems and Control, TNEU}{Ternopil, Ukraine}{}{}
+\cvlistitem {Taught course: ``Computer Networks''.}
+\cventry{2006--2011}{Researcher}{Research Institute of Intelligent Computer Systems, TNEU}{Ternopil, Ukraine}{}{}
+\cvlistitem {Responsible executor for national research project ``Neural Network-based Methods for Evaluating  CPUs Consumption While Instructions Execution'' in 2011;}
+\cvlistitem {Responsible executor for national research project ``Methods and Tools for Evaluating Power Consumption of Embedded Microprocessors'' in 2009-2010;}
+\cvlistitem {Scholarship holder from State Scholarship Foundation of Greek Republic for research activities at Aristotle University of Thessaloníki in 2009-2010;}
+\cvlistitem {Responsible executor for Greek-Ukrainian bilateral project ``Instruction Parameters Analysis for Power Modelling of Embedded Microprocessors'' in 2006-2007.}
+\cventry{2003--2006}{Tester}{Department of Computer Science, TSTU}{Ternopil, Ukraine}{}{}
+\cvlistitem {Administration and support of Department's domain, that includes near 40 PCs (Windows NT4.0/2000);}
+\cvlistitem {Support for Department's Linux server: authorization of Windows-clients via Samba.}
+
+%\newpage
+\subsection{Miscellaneous}
+\cventry{2006--2011}{OrgCom member}{IEEE International Conference on Intelligent Data Acquisition and Advanced Computing Systems}{Dortmund, Germany, 2007; Rende, Italy, 2009; Prague, Czech Republic, 2011}{}{Conference web-page: \url{www.idaacs.net}.}% arguments 3 to 6 are optional
+\cvlistitem{Preparation of \LaTeX papers (incl. formatting of the submitted ones);}\cvlistitem{Accommodation support.}
+
+\section{Languages}
+\cvlanguage{Ukrainian}{native}{}
+\cvlanguage{Russian, English}{fluent}{}
+\cvlanguage{Greek}{beginner}{}
+
+\section{Computer skills}
+\cvcomputer{OS}{Debian GNU/Linux, Windows}{}{}
+\cvcomputer{Programming languages}{Java, Python, C++ (basics)}{}{}
+\cvcomputer{Frameworks}{Django, Flask}{}{}
+\cvcomputer{Web languages and tools}{HTML, CSS, JavaScript}{}{}
+\cvcomputer{IDE}{Netbeans, Eclipse}{}{}
+\cvcomputer{Libraries}{jFreeChart, flask-mysqlalchemy}{}{}
+\cvcomputer{Other tools}{Vim}{}{}
+
+%\section{Interests}
+%\cvline{hobby 1}{\small Description}
+%\cvline{hobby 2}{\small Description}
+%\cvline{hobby 3}{\small Description}
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+
+%\nocite{*}
+%\bibliographystyle{plainyr}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
